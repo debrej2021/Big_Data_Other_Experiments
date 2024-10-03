@@ -1,0 +1,183 @@
+Types of Linear Models in Machine Learning
+There are several types of linear models used in machine learning and statistics:
+
+Linear Regression:
+
+Purpose: Used for predicting continuous outcomes (e.g., predicting house prices, salaries).
+Description: Models the relationship between one or more input variables (features) and a continuous output variable (target) as a straight line.
+Equation:
+𝑦
+=
+𝑤
+1
+𝑥
+1
++
+𝑤
+2
+𝑥
+2
++
+⋯
++
+𝑤
+𝑛
+𝑥
+𝑛
++
+𝑏
+y=w 
+1
+​
+ x 
+1
+​
+ +w 
+2
+​
+ x 
+2
+​
+ +⋯+w 
+n
+​
+ x 
+n
+​
+ +b
+𝑦
+y: Predicted output.
+𝑥
+1
+,
+𝑥
+2
+,
+…
+,
+𝑥
+𝑛
+x 
+1
+​
+ ,x 
+2
+​
+ ,…,x 
+n
+​
+ : Input features.
+𝑤
+1
+,
+𝑤
+2
+,
+…
+,
+𝑤
+𝑛
+w 
+1
+​
+ ,w 
+2
+​
+ ,…,w 
+n
+​
+ : Weights (slopes) assigned to each feature.
+𝑏
+b: Bias term (y-intercept).
+Example: Predicting the price of a house based on its size, location, and number of rooms.
+Linear Classification (Logistic Regression):
+
+Purpose: Used for binary classification problems (e.g., spam vs. not spam).
+Description: Models the probability of an event occurring by fitting a linear equation to the data and then using a logistic function to convert this linear combination into a probability.
+Equation:
+Probability
+=
+1
+1
++
+𝑒
+−
+(
+𝑤
+1
+𝑥
+1
++
+𝑤
+2
+𝑥
+2
++
+⋯
++
+𝑤
+𝑛
+𝑥
+𝑛
++
+𝑏
+)
+Probability= 
+1+e 
+−(w 
+1
+​
+ x 
+1
+​
+ +w 
+2
+​
+ x 
+2
+​
+ +⋯+w 
+n
+​
+ x 
+n
+​
+ +b)
+ 
+1
+​
+ 
+Example: Determining if an email is spam (1) or not spam (0) based on word frequencies in the email.
+Linear Support Vector Machines (Linear SVM):
+
+Purpose: Used for classification tasks.
+Description: Finds the best line (hyperplane) that separates different classes of data points with the maximum margin.
+Equation: It involves a linear decision boundary to separate classes in the feature space.
+Example: Classifying emails into categories such as "work," "personal," and "spam" based on text features.
+Linear Neural Network (Perceptron):
+
+Purpose: Basic building block for neural networks.
+Description: Computes a weighted sum of the inputs and applies a threshold to decide the output.
+Equation:
+𝑦
+=
+∑
+(
+𝑤
+𝑖
+×
+𝑥
+𝑖
+)
++
+𝑏
+y=∑(w 
+i
+​
+ ×x 
+i
+​
+ )+b
+Example: Early image recognition tasks like distinguishing between simple shapes.
+Why Linear Models?
+Linear models are simple, easy to interpret, and often provide a good baseline for many machine learning problems. They work well when there is a linear relationship between the features and the target. However, when relationships in the data are more complex (non-linear), more advanced models like decision trees, neural networks, or ensemble methods might be needed.
